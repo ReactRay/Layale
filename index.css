@@ -120,3 +120,64 @@ table td:last-child {
     z-index: 1000;
     font-family: inherit;
 }
+
+.waze-button {
+    display: inline-block;
+    background-color: #05c3dd;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.waze-button:hover {
+    background-color: #039bb0;
+}
+
+.about-section {
+    margin-top: 3rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: right;
+    color: #222;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0e4d92;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
