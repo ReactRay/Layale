@@ -156,10 +156,13 @@ table td:last-child {
 }
 
 /* Section Containers */
-.menu-section,
 .about-section {
     margin-bottom: 3rem;
     padding: 1.2rem;
+}
+
+.menu-section {
+    margin-bottom: 3rem;
 }
 
 /* About Text */
