@@ -159,6 +159,7 @@ table td:last-child {
 .menu-section,
 .about-section {
     margin-bottom: 3rem;
+    padding: 1.2rem;
 }
 
 /* About Text */
