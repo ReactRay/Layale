@@ -14,7 +14,7 @@
     --color-cyan: #05c3dd;
     --color-cyan-dark: #00a8c5;
     --color-cyan-hover: #039bb0;
-    --color-glass-bg: rgba(255, 255, 255, 0.08);
+    --color-glass-bg: rgba(255, 255, 255, 0.014);
     --color-glass-bg-strong: rgba(255, 255, 255, 0.06);
     --color-table-border: rgba(255, 255, 255, 0.1);
     --shadow-strong: 0 10px 40px rgba(0, 0, 0, 0.5);
@@ -134,6 +134,7 @@ body {
 /* Menu Table */
 table {
     width: 100%;
+    border-collapse: collapse;
     margin-top: 1rem;
     background: var(--color-glass-bg);
     border-radius: 16px;
@@ -240,4 +241,29 @@ table td:last-child {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.by-me {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.2rem 0;
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+    background: var(--color-glass-bg-strong);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid var(--color-table-border);
+    box-shadow: var(--shadow-soft);
+    border-radius: 0 0 20px 20px;
+}
+
+.by-me a {
+    color: var(--color-green);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.by-me a:hover {
+    color: var(--color-green-bright);
+    text-shadow: 0 0 10px var(--color-green-glow);
 }
