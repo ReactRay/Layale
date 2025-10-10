@@ -64,8 +64,23 @@
       </div>
     </div>
 
-    <div class="by-me">
-      Made by <a href="https://www.radwan-mansur.com/">Radwan Mansur</a>
-    </div>
+<div class="by-me">
+  Made by <a href="https://www.radwan-mansur.com/">Radwan Mansur</a>
+</div>
+
+    <script>
+      ;(function () {
+        fetch('https://www.radwan-mansur.com/api/visitors?website=layalesham', {
+          method: 'GET',
+          credentials: 'include',
+        })
+          .then((res) => res.json())
+          .then((data) => console.log('Visitor tracked:', data))
+          .catch((err) => console.error('Visitor tracking failed:', err))
+      })()
+    </script>
+</body>
+</html>
+
   </body>
 </html>
