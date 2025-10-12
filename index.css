@@ -267,3 +267,8 @@ table td:last-child {
     color: var(--color-green-bright);
     text-shadow: 0 0 10px var(--color-green-glow);
 }
+
+.red-text {
+    color: red;
+    font-weight: bold;
+}
